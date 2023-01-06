@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF2BEAFA29688FB500D7A355 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BEAF929688FB500D7A355 /* Constants.swift */; };
+		FF2BEAFB29688FB500D7A355 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BEAF929688FB500D7A355 /* Constants.swift */; };
+		FF2BEAFD2968A16700D7A355 /* Int+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BEAFC2968A16700D7A355 /* Int+Double.swift */; };
+		FF2BEAFE2968A16700D7A355 /* Int+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BEAFC2968A16700D7A355 /* Int+Double.swift */; };
+		FF3965B9296379CE006A6D10 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = FF3965B8296379CE006A6D10 /* KeychainAccess */; };
+		FF3965BD29637A02006A6D10 /* KeychainStorageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3965BC296379E2006A6D10 /* KeychainStorageWrapper.swift */; };
+		FF56EC5829673E8200E5921E /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56EC5729673E8200E5921E /* KeychainHelper.swift */; };
+		FF56EC5929673F6D00E5921E /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56EC5729673E8200E5921E /* KeychainHelper.swift */; };
+		FF56EC5C2967653100E5921E /* KeyboardObserving in Frameworks */ = {isa = PBXBuildFile; productRef = FF56EC5B2967653100E5921E /* KeyboardObserving */; };
+		FF68B1382966BCC800F9FDA9 /* BedtimeWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF68B1372966BCC800F9FDA9 /* BedtimeWidgetProvider.swift */; };
+		FF68B13A2966BCF100F9FDA9 /* BedtimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF68B1392966BCF100F9FDA9 /* BedtimeData.swift */; };
+		FF68B1402966C13000F9FDA9 /* KeychainStorageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3965BC296379E2006A6D10 /* KeychainStorageWrapper.swift */; };
+		FF68B1422966C5CE00F9FDA9 /* BedtimeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF68B1412966C5CE00F9FDA9 /* BedtimeWidgetView.swift */; };
+		FF68B1442966C8D800F9FDA9 /* Color+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF68B1432966C8D800F9FDA9 /* Color+hex.swift */; };
+		FF68B1452966C8DD00F9FDA9 /* Color+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF68B1432966C8D800F9FDA9 /* Color+hex.swift */; };
+		FFACA19F296365150022DC18 /* OuraWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACA19E296365150022DC18 /* OuraWidgetApp.swift */; };
+		FFACA1A1296365150022DC18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACA1A0296365150022DC18 /* ContentView.swift */; };
+		FFACA1A3296365160022DC18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFACA1A2296365160022DC18 /* Assets.xcassets */; };
+		FFACA1A6296365160022DC18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFACA1A5296365160022DC18 /* Preview Assets.xcassets */; };
+		FFACA1B32963653F0022DC18 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFACA1B22963653F0022DC18 /* WidgetKit.framework */; };
+		FFACA1B52963653F0022DC18 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFACA1B42963653F0022DC18 /* SwiftUI.framework */; };
+		FFACA1B82963653F0022DC18 /* OuraWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACA1B72963653F0022DC18 /* OuraWidgetBundle.swift */; };
+		FFACA1BF296365400022DC18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFACA1BE296365400022DC18 /* Assets.xcassets */; };
+		FFACA1C1296365400022DC18 /* OuraWidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FFACA1BD2963653F0022DC18 /* OuraWidgetExtension.intentdefinition */; };
+		FFACA1C2296365400022DC18 /* OuraWidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FFACA1BD2963653F0022DC18 /* OuraWidgetExtension.intentdefinition */; };
+		FFACA1D02963665B0022DC18 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACA1CB2963665B0022DC18 /* ClockView.swift */; };
+		FFACA1D22963665B0022DC18 /* BedtimeWidgetBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACA1CD2963665B0022DC18 /* BedtimeWidgetBackgroundView.swift */; };
+		FFACA1DB296368800022DC18 /* BedtimeWidgetMediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACA1D8296367F70022DC18 /* BedtimeWidgetMediumView.swift */; };
+		FFACA1DC296368850022DC18 /* BedtimeWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACA1CC2963665B0022DC18 /* BedtimeWindow.swift */; };
+		FFACA1DE2963698D0022DC18 /* BedtimeWidgetRectangularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACA1DD2963698D0022DC18 /* BedtimeWidgetRectangularView.swift */; };
+		FFACA1E029636B180022DC18 /* BedtimeWidgetAccessoryInlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACA1DF29636B180022DC18 /* BedtimeWidgetAccessoryInlineView.swift */; };
+		FFACA1E229636C750022DC18 /* BedtimeWidgetSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACA1E129636C750022DC18 /* BedtimeWidgetSmallView.swift */; };
+		FFC89E482963725300572DEF /* OuraWidgetExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FFACA1B02963653F0022DC18 /* OuraWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FFC89E4D296378FD00572DEF /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = FFC89E4C296378FD00572DEF /* KeychainAccess */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFACA1C3296365400022DC18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFACA193296365150022DC18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFACA1AF2963653F0022DC18;
+			remoteInfo = OuraWidgetExtensionExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FFACA1C9296365400022DC18 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FFC89E482963725300572DEF /* OuraWidgetExtensionExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FF2BEAF82968857200D7A355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FF2BEAF929688FB500D7A355 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FF2BEAFC2968A16700D7A355 /* Int+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Double.swift"; sourceTree = "<group>"; };
+		FF3965BC296379E2006A6D10 /* KeychainStorageWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorageWrapper.swift; sourceTree = "<group>"; };
+		FF56EC5529673CAC00E5921E /* OuraWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OuraWidget.entitlements; sourceTree = "<group>"; };
+		FF56EC5629673CB500E5921E /* OuraWidgetExtensionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OuraWidgetExtensionExtension.entitlements; sourceTree = "<group>"; };
+		FF56EC5729673E8200E5921E /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		FF68B12B2966159600F9FDA9 /* ActivityWidgetMediumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityWidgetMediumView.swift; sourceTree = "<group>"; };
+		FF68B12F29661AB900F9FDA9 /* ActivityBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityBackgroundView.swift; sourceTree = "<group>"; };
+		FF68B1322966B71F00F9FDA9 /* ActivityWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityWidgetView.swift; sourceTree = "<group>"; };
+		FF68B1342966BBBF00F9FDA9 /* ActivityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityData.swift; sourceTree = "<group>"; };
+		FF68B1372966BCC800F9FDA9 /* BedtimeWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeWidgetProvider.swift; sourceTree = "<group>"; };
+		FF68B1392966BCF100F9FDA9 /* BedtimeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeData.swift; sourceTree = "<group>"; };
+		FF68B13C2966BE3100F9FDA9 /* ActivityWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityWidgetProvider.swift; sourceTree = "<group>"; };
+		FF68B1412966C5CE00F9FDA9 /* BedtimeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeWidgetView.swift; sourceTree = "<group>"; };
+		FF68B1432966C8D800F9FDA9 /* Color+hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+hex.swift"; sourceTree = "<group>"; };
+		FFACA19B296365150022DC18 /* OuraWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OuraWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFACA19E296365150022DC18 /* OuraWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OuraWidgetApp.swift; sourceTree = "<group>"; };
+		FFACA1A0296365150022DC18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FFACA1A2296365160022DC18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFACA1A5296365160022DC18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FFACA1B02963653F0022DC18 /* OuraWidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OuraWidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFACA1B22963653F0022DC18 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FFACA1B42963653F0022DC18 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		FFACA1B72963653F0022DC18 /* OuraWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OuraWidgetBundle.swift; sourceTree = "<group>"; };
+		FFACA1BD2963653F0022DC18 /* OuraWidgetExtension.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = OuraWidgetExtension.intentdefinition; sourceTree = "<group>"; };
+		FFACA1BE296365400022DC18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFACA1C0296365400022DC18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFACA1CB2963665B0022DC18 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		FFACA1CC2963665B0022DC18 /* BedtimeWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BedtimeWindow.swift; sourceTree = "<group>"; };
+		FFACA1CD2963665B0022DC18 /* BedtimeWidgetBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BedtimeWidgetBackgroundView.swift; sourceTree = "<group>"; };
+		FFACA1D8296367F70022DC18 /* BedtimeWidgetMediumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeWidgetMediumView.swift; sourceTree = "<group>"; };
+		FFACA1DD2963698D0022DC18 /* BedtimeWidgetRectangularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeWidgetRectangularView.swift; sourceTree = "<group>"; };
+		FFACA1DF29636B180022DC18 /* BedtimeWidgetAccessoryInlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeWidgetAccessoryInlineView.swift; sourceTree = "<group>"; };
+		FFACA1E129636C750022DC18 /* BedtimeWidgetSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeWidgetSmallView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFACA198296365150022DC18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC89E4D296378FD00572DEF /* KeychainAccess in Frameworks */,
+				FF56EC5C2967653100E5921E /* KeyboardObserving in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFACA1AD2963653F0022DC18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFACA1B52963653F0022DC18 /* SwiftUI.framework in Frameworks */,
+				FFACA1B32963653F0022DC18 /* WidgetKit.framework in Frameworks */,
+				FF3965B9296379CE006A6D10 /* KeychainAccess in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF2BEAFF2968B59000D7A355 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				FF2BEAFC2968A16700D7A355 /* Int+Double.swift */,
+				FF68B1432966C8D800F9FDA9 /* Color+hex.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		FF68B12D2966159C00F9FDA9 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				FF68B1342966BBBF00F9FDA9 /* ActivityData.swift */,
+				FF68B13C2966BE3100F9FDA9 /* ActivityWidgetProvider.swift */,
+				FF68B12B2966159600F9FDA9 /* ActivityWidgetMediumView.swift */,
+				FF68B1322966B71F00F9FDA9 /* ActivityWidgetView.swift */,
+				FF68B12F29661AB900F9FDA9 /* ActivityBackgroundView.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		FFACA192296365150022DC18 = {
+			isa = PBXGroup;
+			children = (
+				FF56EC5629673CB500E5921E /* OuraWidgetExtensionExtension.entitlements */,
+				FFACA19D296365150022DC18 /* OuraWidget */,
+				FFACA1B62963653F0022DC18 /* OuraWidgetExtension */,
+				FFACA1B12963653F0022DC18 /* Frameworks */,
+				FFACA19C296365150022DC18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFACA19C296365150022DC18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFACA19B296365150022DC18 /* OuraWidget.app */,
+				FFACA1B02963653F0022DC18 /* OuraWidgetExtensionExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFACA19D296365150022DC18 /* OuraWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FF2BEAFF2968B59000D7A355 /* Extenstions */,
+				FF56EC5529673CAC00E5921E /* OuraWidget.entitlements */,
+				FFACA19E296365150022DC18 /* OuraWidgetApp.swift */,
+				FF3965BC296379E2006A6D10 /* KeychainStorageWrapper.swift */,
+				FF56EC5729673E8200E5921E /* KeychainHelper.swift */,
+				FFACA1A0296365150022DC18 /* ContentView.swift */,
+				FF2BEAF929688FB500D7A355 /* Constants.swift */,
+				FF2BEAF82968857200D7A355 /* Info.plist */,
+				FFACA1A2296365160022DC18 /* Assets.xcassets */,
+				FFACA1A4296365160022DC18 /* Preview Content */,
+			);
+			path = OuraWidget;
+			sourceTree = "<group>";
+		};
+		FFACA1A4296365160022DC18 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FFACA1A5296365160022DC18 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FFACA1B12963653F0022DC18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFACA1B22963653F0022DC18 /* WidgetKit.framework */,
+				FFACA1B42963653F0022DC18 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFACA1B62963653F0022DC18 /* OuraWidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FF68B12D2966159C00F9FDA9 /* Activity */,
+				FFACA1CA2963665B0022DC18 /* Bedtime */,
+				FFACA1B72963653F0022DC18 /* OuraWidgetBundle.swift */,
+				FFACA1BD2963653F0022DC18 /* OuraWidgetExtension.intentdefinition */,
+				FFACA1BE296365400022DC18 /* Assets.xcassets */,
+				FFACA1C0296365400022DC18 /* Info.plist */,
+			);
+			path = OuraWidgetExtension;
+			sourceTree = "<group>";
+		};
+		FFACA1CA2963665B0022DC18 /* Bedtime */ = {
+			isa = PBXGroup;
+			children = (
+				FF68B1392966BCF100F9FDA9 /* BedtimeData.swift */,
+				FFACA1CC2963665B0022DC18 /* BedtimeWindow.swift */,
+				FF68B1372966BCC800F9FDA9 /* BedtimeWidgetProvider.swift */,
+				FF68B1412966C5CE00F9FDA9 /* BedtimeWidgetView.swift */,
+				FFACA1E129636C750022DC18 /* BedtimeWidgetSmallView.swift */,
+				FFACA1D8296367F70022DC18 /* BedtimeWidgetMediumView.swift */,
+				FFACA1DD2963698D0022DC18 /* BedtimeWidgetRectangularView.swift */,
+				FFACA1DF29636B180022DC18 /* BedtimeWidgetAccessoryInlineView.swift */,
+				FFACA1CD2963665B0022DC18 /* BedtimeWidgetBackgroundView.swift */,
+				FFACA1CB2963665B0022DC18 /* ClockView.swift */,
+			);
+			path = Bedtime;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFACA19A296365150022DC18 /* OuraWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFACA1A9296365160022DC18 /* Build configuration list for PBXNativeTarget "OuraWidget" */;
+			buildPhases = (
+				FFACA197296365150022DC18 /* Sources */,
+				FFACA198296365150022DC18 /* Frameworks */,
+				FFACA199296365150022DC18 /* Resources */,
+				FFACA1C9296365400022DC18 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFACA1C4296365400022DC18 /* PBXTargetDependency */,
+			);
+			name = OuraWidget;
+			packageProductDependencies = (
+				FFC89E4C296378FD00572DEF /* KeychainAccess */,
+				FF56EC5B2967653100E5921E /* KeyboardObserving */,
+			);
+			productName = OuraWdget;
+			productReference = FFACA19B296365150022DC18 /* OuraWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFACA1AF2963653F0022DC18 /* OuraWidgetExtensionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFACA1C6296365400022DC18 /* Build configuration list for PBXNativeTarget "OuraWidgetExtensionExtension" */;
+			buildPhases = (
+				FFACA1AC2963653F0022DC18 /* Sources */,
+				FFACA1AD2963653F0022DC18 /* Frameworks */,
+				FFACA1AE2963653F0022DC18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OuraWidgetExtensionExtension;
+			packageProductDependencies = (
+				FF3965B8296379CE006A6D10 /* KeychainAccess */,
+			);
+			productName = OuraWidgetExtensionExtension;
+			productReference = FFACA1B02963653F0022DC18 /* OuraWidgetExtensionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFACA193296365150022DC18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FFACA19A296365150022DC18 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					FFACA1AF2963653F0022DC18 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = FFACA196296365150022DC18 /* Build configuration list for PBXProject "OuraWidget" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFACA192296365150022DC18;
+			packageReferences = (
+				FFC89E4B296378FD00572DEF /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				FF56EC5A2967647100E5921E /* XCRemoteSwiftPackageReference "KeyboardObserving" */,
+			);
+			productRefGroup = FFACA19C296365150022DC18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFACA19A296365150022DC18 /* OuraWidget */,
+				FFACA1AF2963653F0022DC18 /* OuraWidgetExtensionExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFACA199296365150022DC18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFACA1A6296365160022DC18 /* Preview Assets.xcassets in Resources */,
+				FFACA1A3296365160022DC18 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFACA1AE2963653F0022DC18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFACA1BF296365400022DC18 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFACA197296365150022DC18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF3965BD29637A02006A6D10 /* KeychainStorageWrapper.swift in Sources */,
+				FF56EC5829673E8200E5921E /* KeychainHelper.swift in Sources */,
+				FF68B1442966C8D800F9FDA9 /* Color+hex.swift in Sources */,
+				FFACA1A1296365150022DC18 /* ContentView.swift in Sources */,
+				FF2BEAFD2968A16700D7A355 /* Int+Double.swift in Sources */,
+				FF2BEAFA29688FB500D7A355 /* Constants.swift in Sources */,
+				FFACA19F296365150022DC18 /* OuraWidgetApp.swift in Sources */,
+				FFACA1C2296365400022DC18 /* OuraWidgetExtension.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFACA1AC2963653F0022DC18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF2BEAFB29688FB500D7A355 /* Constants.swift in Sources */,
+				FF68B1452966C8DD00F9FDA9 /* Color+hex.swift in Sources */,
+				FFACA1D22963665B0022DC18 /* BedtimeWidgetBackgroundView.swift in Sources */,
+				FF56EC5929673F6D00E5921E /* KeychainHelper.swift in Sources */,
+				FF2BEAFE2968A16700D7A355 /* Int+Double.swift in Sources */,
+				FFACA1B82963653F0022DC18 /* OuraWidgetBundle.swift in Sources */,
+				FF68B1422966C5CE00F9FDA9 /* BedtimeWidgetView.swift in Sources */,
+				FFACA1DB296368800022DC18 /* BedtimeWidgetMediumView.swift in Sources */,
+				FFACA1E029636B180022DC18 /* BedtimeWidgetAccessoryInlineView.swift in Sources */,
+				FFACA1DC296368850022DC18 /* BedtimeWindow.swift in Sources */,
+				FFACA1D02963665B0022DC18 /* ClockView.swift in Sources */,
+				FFACA1E229636C750022DC18 /* BedtimeWidgetSmallView.swift in Sources */,
+				FFACA1DE2963698D0022DC18 /* BedtimeWidgetRectangularView.swift in Sources */,
+				FF68B1402966C13000F9FDA9 /* KeychainStorageWrapper.swift in Sources */,
+				FFACA1C1296365400022DC18 /* OuraWidgetExtension.intentdefinition in Sources */,
+				FF68B13A2966BCF100F9FDA9 /* BedtimeData.swift in Sources */,
+				FF68B1382966BCC800F9FDA9 /* BedtimeWidgetProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFACA1C4296365400022DC18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFACA1AF2963653F0022DC18 /* OuraWidgetExtensionExtension */;
+			targetProxy = FFACA1C3296365400022DC18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FFACA1A7296365160022DC18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFACA1A8296365160022DC18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFACA1AA296365160022DC18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OuraWidget/OuraWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OuraWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = 7R6HKL95CT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OuraWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Oura Widget";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drankou.OuraWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFACA1AB296365160022DC18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OuraWidget/OuraWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OuraWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = 7R6HKL95CT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OuraWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Oura Widget";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drankou.OuraWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FFACA1C7296365400022DC18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = OuraWidgetExtensionExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7R6HKL95CT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OuraWidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OuraWidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drankou.OuraWidget.OuraWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FFACA1C8296365400022DC18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = OuraWidgetExtensionExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7R6HKL95CT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OuraWidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OuraWidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drankou.OuraWidget.OuraWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFACA196296365150022DC18 /* Build configuration list for PBXProject "OuraWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFACA1A7296365160022DC18 /* Debug */,
+				FFACA1A8296365160022DC18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFACA1A9296365160022DC18 /* Build configuration list for PBXNativeTarget "OuraWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFACA1AA296365160022DC18 /* Debug */,
+				FFACA1AB296365160022DC18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFACA1C6296365400022DC18 /* Build configuration list for PBXNativeTarget "OuraWidgetExtensionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFACA1C7296365400022DC18 /* Debug */,
+				FFACA1C8296365400022DC18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FF56EC5A2967647100E5921E /* XCRemoteSwiftPackageReference "KeyboardObserving" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nickffox/KeyboardObserving.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		FFC89E4B296378FD00572DEF /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FF3965B8296379CE006A6D10 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFC89E4B296378FD00572DEF /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		FF56EC5B2967653100E5921E /* KeyboardObserving */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF56EC5A2967647100E5921E /* XCRemoteSwiftPackageReference "KeyboardObserving" */;
+			productName = KeyboardObserving;
+		};
+		FFC89E4C296378FD00572DEF /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFC89E4B296378FD00572DEF /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FFACA193296365150022DC18 /* Project object */;
+}
