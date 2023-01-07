@@ -56,6 +56,6 @@ final class BedtimeDataProvider {
             }
         }
 
-        return BedtimeWindow(status: .UNKNOWN)
+        return BedtimeWindow(status: .UNKNOWN, errorMessage: "Something went wrong. Check your API key")
     }
 }
