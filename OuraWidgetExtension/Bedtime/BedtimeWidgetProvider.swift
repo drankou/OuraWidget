@@ -35,7 +35,16 @@ struct BedtimeWidgetProvider: IntentTimelineProvider {
                 bedtimeWindow = BedtimeWindow(status: .MISSING_API_KEY, errorMessage: "Tap to configure API key")
             }
             
+            if let cachedEntry = entryCache.previousEntry, !bedtimeWindow.isAvailable {
+                let timeline = Timeline(entries: [cachedEntry], policy: .after(.now.advanced(by: 60*60)))
+                completion(timeline)
+                return
+            }
+            
             let entry = BedtimeData(date: .now, configuration: configuration, bedtimeWindow: bedtimeWindow)
+            if bedtimeWindow.isAvailable {
+                entryCache.previousEntry = entry
+            }
             let timeline = Timeline(entries: [entry], policy: .after(.now.advanced(by: 60*60)))
             completion(timeline)
         }
