@@ -38,8 +38,8 @@ struct BedtimeWindow: Codable {
         let locale = Calendar.current.locale
         
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = locale?.hourCycle == .oneToTwelve ? "h:mm a" : "HH:mm"
-        dateFormatter.timeZone = locale?.timeZone ?? TimeZone(secondsFromGMT: 0)
+        dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)!
+        dateFormatter.setLocalizedDateFormatFromTemplate("HHmm")
         
         let startDate = Date(timeIntervalSince1970: TimeInterval(self.start))
         let endDate = Date(timeIntervalSince1970: TimeInterval(self.end))

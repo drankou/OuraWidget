@@ -25,8 +25,13 @@ struct BedtimeWidgetRectangularView: View {
     }
 }
 
+
 struct BedtimeWidgetRectangularView_Previews: PreviewProvider {
     static var previews: some View {
-        BedtimeWidgetRectangularView(bedtimeWindow: BedtimeWindowTestData).previewContext(WidgetPreviewContext(family: .accessoryRectangular))
+        if #available(iOSApplicationExtension 16.0, *) {
+            BedtimeWidgetRectangularView(bedtimeWindow: BedtimeWindowTestData).previewContext(WidgetPreviewContext(family: .accessoryRectangular))
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }

@@ -17,6 +17,22 @@ struct OuraWidgetBundle: WidgetBundle {
 
 struct BedtimeWidget: Widget {
     let kind: String = "BedtimeWidget"
+    
+    private var supportedFamilies: [WidgetFamily] {
+        if #available(iOSApplicationExtension 16.0, *) {
+            return [
+                .systemSmall,
+                .systemMedium,
+                .accessoryRectangular,
+                .accessoryInline
+            ]
+        } else {
+            return [
+                .systemSmall,
+                .systemMedium,
+            ]
+        }
+    }
 
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: BedtimeWidgetProvider()) { entry in
@@ -24,6 +40,6 @@ struct BedtimeWidget: Widget {
         }
         .configurationDisplayName("Bedtime")
         .description("Get quick insight about your ideal bedtime.")
-        .supportedFamilies([.systemMedium, .systemSmall, .accessoryInline, .accessoryRectangular])
+        .supportedFamilies(supportedFamilies)
     }
 }

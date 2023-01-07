@@ -25,6 +25,10 @@ struct BedtimeWidgetAccessoryInlineView: View {
 
 struct BedtimeWidgetAccessoryInlineView_Previews: PreviewProvider {
     static var previews: some View {
-        BedtimeWidgetAccessoryInlineView(bedtimeWindow: BedtimeWindowTestData).previewContext(WidgetPreviewContext(family: .accessoryInline))
+        if #available(iOSApplicationExtension 16.0, *) {
+            BedtimeWidgetAccessoryInlineView(bedtimeWindow: BedtimeWindowTestData).previewContext(WidgetPreviewContext(family: .accessoryInline))
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }

@@ -11,7 +11,7 @@ import WidgetKit
 struct ClockView: View {
     var width:CGFloat = 80
     var bedtimeWindow: BedtimeWindow
-    let isTwelveHourCycle = Calendar.current.locale?.hourCycle == .oneToTwelve
+    let isTwelveHourCycle = isTwelveHour()
     let currentHour = CGFloat(Calendar.current.component(.hour, from: Date()))
     let currentMinutes = CGFloat(Calendar.current.component(.minute, from: Date()))
     var window: BedtimeWindowRich { bedtimeWindow.rich() }
@@ -79,7 +79,13 @@ struct ClockView: View {
             }.frame(width: width, height: width)
         }
     }
-    
+}
+
+func isTwelveHour() -> Bool {
+    let locale = NSLocale.current
+    let dateFormat = DateFormatter.dateFormat(fromTemplate: "j", options: 0, locale: locale)!
+
+    return dateFormat.firstIndex(of: "a") != nil
 }
 
 struct CircleSector: View {
