@@ -119,8 +119,10 @@ struct ContentView: View {
                 pasteboardChangeCountBeforeBackground = UIPasteboard.general.changeCount
             }
         }.onOpenURL { url in
-            guard let host = url.host, host != "api_key" else { return }
-            
+            if let host = url.host, host == "api_key" {
+                return
+            }
+
             isRedirecting = true
             UIApplication.shared.open(URL(string: "oura://")!, options: [:]) { success in
                 isRedirecting = false
