@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WidgetKit
 import KeychainAccess
 import KeyboardObserving
 
@@ -76,6 +77,7 @@ struct ContentView: View {
                             Button(action: {
                                 savedApiKey = apiKey
                                 isInputFocused = false
+                                WidgetCenter.shared.reloadAllTimelines()
                             }) {
                                 Text("Save")
                                     .foregroundColor(.white)
@@ -117,11 +119,11 @@ struct ContentView: View {
                 pasteboardChangeCountBeforeBackground = UIPasteboard.general.changeCount
             }
         }.onOpenURL { url in
+            guard let host = url.host, host != "api_key" else { return }
+            
             isRedirecting = true
             UIApplication.shared.open(URL(string: "oura://")!, options: [:]) { success in
-                if success {
-                    isRedirecting = false
-                }
+                isRedirecting = false
             }
         }
     }

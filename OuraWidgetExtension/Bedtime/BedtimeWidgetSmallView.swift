@@ -31,7 +31,7 @@ struct BedtimeWidgetSmallView: View {
                             .foregroundColor(.white)
                             .padding(.top, 4)
                     } else {
-                        Text("Bedtime window is not available yet. Please check later")
+                        Text(bedtimeWindow.errorMessage)
                             .font(.system(size: 13, weight: .semibold))
                             .foregroundColor(.white)
                             .padding(.top)
@@ -39,12 +39,12 @@ struct BedtimeWidgetSmallView: View {
                 }
                 Spacer()
             }.padding()
-        }.widgetURL(URL(string: Constants.DEEP_LINK)!)
+        }.widgetURL(URL(string: Constants.DEEP_LINK + (bedtimeWindow.status == .MISSING_API_KEY ? "api_key" : ""))!)
     }
 }
 
 struct BedtimeWidgetSmallView_Previews: PreviewProvider {
     static var previews: some View {
-        BedtimeWidgetSmallView(bedtimeWindow: BedtimeWindowTestData).previewContext(WidgetPreviewContext(family: .systemSmall))
+        BedtimeWidgetSmallView(bedtimeWindow: BedtimeWindowPlaceholder).previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

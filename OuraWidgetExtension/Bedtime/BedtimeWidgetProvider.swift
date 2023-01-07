@@ -8,22 +8,35 @@
 import WidgetKit
 import KeychainAccess
 
-struct BedtimeWidgetProvider: IntentTimelineProvider {
-    func placeholder(in context: Context) -> BedtimeData {
-        BedtimeData(date: Date(), configuration: ConfigurationIntent(), bedtimeWindow: BedtimeWindow(start: -9000, end: -6300))
-    }
 
+class BedtimeEntryCache {
+    var previousEntry: BedtimeData?
+}
+
+struct BedtimeWidgetProvider: IntentTimelineProvider {
+    private let entryCache = BedtimeEntryCache()
+    
+    func placeholder(in context: Context) -> BedtimeData {
+        BedtimeData(date: Date(), configuration: ConfigurationIntent(), bedtimeWindow: BedtimeWindowPlaceholder)
+    }
+    
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (BedtimeData) -> ()) {
-        let entry = BedtimeData(date: Date(), configuration: configuration, bedtimeWindow: BedtimeWindow(start: -9000, end: -6300))
+        let entry = BedtimeData(date: Date(), configuration: configuration, bedtimeWindow: BedtimeWindowPlaceholder)
         completion(entry)
     }
-
+    
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<BedtimeData>) -> ()) {
         Task {
-            let apiKey = try! KeychainHelper.shared.get(key: "OURA_API_KEY")!
-            let bedtimeWindow = await BedtimeDataProvider.shared.getIdealBedtimeWindow(apiKey: apiKey)
-            let entry = BedtimeData(date: .now, configuration: configuration, bedtimeWindow: bedtimeWindow ?? BedtimeWindow())
-            let timeline = Timeline(entries: [entry], policy: .after(.now.advanced(by: 15*60)))
+            var bedtimeWindow: BedtimeWindow
+            
+            if let apiKey = try? KeychainHelper.shared.get(key: "OURA_API_KEY"), apiKey != "" {
+                bedtimeWindow = await BedtimeDataProvider.shared.getIdealBedtimeWindow(apiKey: apiKey)
+            } else {
+                bedtimeWindow = BedtimeWindow(status: .MISSING_API_KEY, errorMessage: "Tap to configure API key")
+            }
+            
+            let entry = BedtimeData(date: .now, configuration: configuration, bedtimeWindow: bedtimeWindow)
+            let timeline = Timeline(entries: [entry], policy: .after(.now.advanced(by: 60*60)))
             completion(timeline)
         }
     }

@@ -19,14 +19,14 @@ struct BedtimeWidgetAccessoryInlineView: View {
             } else {
                 Text("Bedtime is not available.")
             }
-        }.widgetURL(URL(string: Constants.DEEP_LINK)!)
+        }.widgetURL(URL(string: Constants.DEEP_LINK + (bedtimeWindow.status == .MISSING_API_KEY ? "api_key" : ""))!)
     }
 }
 
 struct BedtimeWidgetAccessoryInlineView_Previews: PreviewProvider {
     static var previews: some View {
         if #available(iOSApplicationExtension 16.0, *) {
-            BedtimeWidgetAccessoryInlineView(bedtimeWindow: BedtimeWindowTestData).previewContext(WidgetPreviewContext(family: .accessoryInline))
+            BedtimeWidgetAccessoryInlineView(bedtimeWindow: BedtimeWindowPlaceholder).previewContext(WidgetPreviewContext(family: .accessoryInline))
         } else {
             // Fallback on earlier versions
         }

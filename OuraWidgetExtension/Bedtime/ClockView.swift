@@ -115,6 +115,6 @@ struct ClockHour: View {
 
 struct ClockView_Previews: PreviewProvider {
     static var previews: some View {
-        ClockView(bedtimeWindow: BedtimeWindowTestData).previewContext(WidgetPreviewContext(family: .systemSmall))
+        ClockView(bedtimeWindow: BedtimeWindowPlaceholder).previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

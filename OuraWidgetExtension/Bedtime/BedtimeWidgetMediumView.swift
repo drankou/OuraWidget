@@ -38,7 +38,10 @@ struct BedtimeWidgetMediumView: View {
                                 .foregroundColor(.gray)
                                 .multilineTextAlignment(.leading)
                         } else {
-                            Text("Bedtime window is not available.\nPlease check later").font(.system(size: 13, weight: .regular)).padding(.top, 16)
+                            Text(bedtimeWindow.errorMessage)
+                                .font(.system(size: 15, weight: .regular))
+                                .foregroundColor(.white)
+                                .padding(.top, 16)
                         }
                     }
                     if bedtimeWindow.isAvailable {
@@ -49,12 +52,12 @@ struct BedtimeWidgetMediumView: View {
                 
                 Spacer()
             }.padding(16)
-        }.widgetURL(URL(string: Constants.DEEP_LINK)!)
+        }.widgetURL(URL(string: Constants.DEEP_LINK + (bedtimeWindow.status == .MISSING_API_KEY ? "api_key" : ""))!)
     }
 }
 
 struct BedtimeWidgetMediumView_Previews: PreviewProvider {
     static var previews: some View {
-        BedtimeWidgetMediumView(bedtimeWindow: BedtimeWindowTestData).previewContext(WidgetPreviewContext(family: .systemMedium))
+        BedtimeWidgetMediumView(bedtimeWindow: BedtimeWindowPlaceholder).previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }

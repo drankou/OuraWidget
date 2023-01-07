@@ -21,7 +21,7 @@ struct BedtimeWidgetRectangularView: View {
                     Text("Bedtime is not available.")
                 }
             }
-        }.widgetURL(URL(string: Constants.DEEP_LINK)!)
+        }.widgetURL(URL(string: Constants.DEEP_LINK + (bedtimeWindow.status == .MISSING_API_KEY ? "api_key" : ""))!)
     }
 }
 
@@ -29,7 +29,7 @@ struct BedtimeWidgetRectangularView: View {
 struct BedtimeWidgetRectangularView_Previews: PreviewProvider {
     static var previews: some View {
         if #available(iOSApplicationExtension 16.0, *) {
-            BedtimeWidgetRectangularView(bedtimeWindow: BedtimeWindowTestData).previewContext(WidgetPreviewContext(family: .accessoryRectangular))
+            BedtimeWidgetRectangularView(bedtimeWindow: BedtimeWindowPlaceholder).previewContext(WidgetPreviewContext(family: .accessoryRectangular))
         } else {
             // Fallback on earlier versions
         }
