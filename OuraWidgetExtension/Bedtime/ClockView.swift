@@ -27,7 +27,7 @@ struct ClockView: View {
                         .fill(.black)
                     
                     Circle()
-                        .strokeBorder(Color(hex: "568BBE"), lineWidth: 3)
+                        .strokeBorder(Color(hex: "5D7F9F"), lineWidth: 3)
                     
                     CircleSector(startAngle: .degrees(startMinutes*0.5-90), endAngle: .degrees(endMinutes*0.5-90), radius: width/2)
                         .opacity(0.2)
@@ -36,21 +36,18 @@ struct ClockView: View {
                     Circle()
                         .trim(from: 0, to: arcLength)
                         .stroke(
-                            .white,
+                            Color(hex: "85C9FA"),
                             lineWidth: 3
                         )
                         .rotationEffect(.degrees(startMinutes*0.5-90))
                 }
                 
                 // Hour arrow
-                Circle()
-                    .fill(.white)
-                    .frame(width: 2, height: 2)
                 Rectangle()
-                    .fill(.white)
+                    .fill(Color(hex: "85C9FA"))
                     .cornerRadius(20)
-                    .frame(width: 2, height: (width-20) / 2)
-                    .offset(y: -(width-20)/4)
+                    .frame(width: 2, height: (width-16) / 2)
+                    .offset(y: -(width-16)/4)
                     .rotationEffect(.degrees(30*currentHour+currentMinutes/2))
                     .zIndex(1)
                 
