@@ -124,7 +124,7 @@ struct ContentView: View {
             }
 
             isRedirecting = true
-            UIApplication.shared.open(URL(string: "oura://")!, options: [:]) { success in
+            UIApplication.shared.open(url, options: [:]) { success in
                 isRedirecting = false
             }
         }

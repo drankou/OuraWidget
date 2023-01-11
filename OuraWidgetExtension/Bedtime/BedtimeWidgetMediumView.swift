@@ -52,7 +52,7 @@ struct BedtimeWidgetMediumView: View {
                 
                 Spacer()
             }.padding(16)
-        }.widgetURL(URL(string: Constants.DEEP_LINK + (bedtimeWindow.status == .MISSING_API_KEY ? "api_key" : ""))!)
+        }.widgetURL(URL(string: Constants.DEEP_LINK + (bedtimeWindow.status == .MISSING_API_KEY ? "api_key" : "v1/route/sleep"))!)
     }
 }
 
