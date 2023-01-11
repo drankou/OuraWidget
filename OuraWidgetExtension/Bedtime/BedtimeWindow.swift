@@ -13,11 +13,11 @@ struct IdealBedtimeResponse: Codable {
 
 struct IdealBedtime: Codable {
     let date: String
-    let bedtime_window: BedtimeWindowField
+    let bedtime_window: BedtimeWindowValue
     let status: BedtimeWindowStatus
 }
 
-struct BedtimeWindowField: Codable {
+struct BedtimeWindowValue: Codable {
     let start: Int?
     let end: Int?
 }

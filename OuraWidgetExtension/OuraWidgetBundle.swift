@@ -12,6 +12,7 @@ import SwiftUI
 struct OuraWidgetBundle: WidgetBundle {
     var body: some Widget {
         BedtimeWidget()
+        ActivityWidget()
     }
 }
 
@@ -41,5 +42,18 @@ struct BedtimeWidget: Widget {
         .configurationDisplayName("Bedtime")
         .description("Get quick insight about your ideal bedtime.")
         .supportedFamilies(supportedFamilies)
+    }
+}
+
+struct ActivityWidget: Widget {
+    let kind: String = "ActivityWidget"
+
+    var body: some WidgetConfiguration {
+        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: ActivityWidgetProvider()) { entry in
+            ActivityWidgetView(entry: entry)
+        }
+        .configurationDisplayName("Activity")
+        .description("Get quick insights about your Activity score.")
+        .supportedFamilies([.systemMedium])
     }
 }

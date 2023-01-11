@@ -33,7 +33,7 @@ struct BedtimeWidgetView : View {
 
 struct BedtimeWidgetView_Previews: PreviewProvider {
     static var previews: some View {
-        BedtimeWidgetView(entry: BedtimeData(date: Date(), configuration: ConfigurationIntent(), bedtimeWindow: BedtimeWindowPlaceholder))
+        BedtimeWidgetView(entry: BedtimeEntry(date: Date(), configuration: ConfigurationIntent(), bedtimeWindow: BedtimeWindowPlaceholder))
             .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }
