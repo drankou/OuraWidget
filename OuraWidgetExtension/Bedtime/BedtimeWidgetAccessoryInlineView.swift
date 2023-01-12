@@ -19,7 +19,7 @@ struct BedtimeWidgetAccessoryInlineView: View {
             } else {
                 Text("Bedtime is not available.")
             }
-        }.widgetURL(URL(string: Constants.DEEP_LINK + (bedtimeWindow.status == .MISSING_API_KEY ? "api_key" : "v1/route/sleep"))!)
+        }.widgetURL(URL(string: Constants.DEEP_LINK + (bedtimeWindow.status == .MISSING_API_KEY ? "api_key" : "v1/route/home"))!)
     }
 }
 

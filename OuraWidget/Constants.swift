@@ -8,5 +8,5 @@
 import Foundation
 
 struct Constants {
-    static let DEEP_LINK = "ourawidget://"
+    static let DEEP_LINK = "oura://"
 }

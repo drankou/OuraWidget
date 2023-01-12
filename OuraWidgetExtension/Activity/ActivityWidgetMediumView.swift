@@ -93,7 +93,7 @@ struct ActivityWidgetMediumView: View {
                 }
                 Spacer()
             }.padding()
-        }.widgetURL(URL(string: Constants.DEEP_LINK + "v1/route/activity"))
+        }.widgetURL(URL(string: Constants.DEEP_LINK + (isError ? "api_key" : "v1/route/activity")))
     }
 }
 
