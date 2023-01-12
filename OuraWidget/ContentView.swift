@@ -110,8 +110,10 @@ struct ContentView: View {
         .ignoresSafeArea()
         .onChange(of: scenePhase) { newPhase in
             if newPhase == .active {
+                guard apiKey == "" else { return }
                 guard pasteboardChangeCountBeforeBackground != UIPasteboard.general.changeCount else { return }
                 guard UIPasteboard.general.hasStrings else { return }
+                
                 if let clipboardKey = UIPasteboard.general.string {
                     apiKey = clipboardKey
                 }
