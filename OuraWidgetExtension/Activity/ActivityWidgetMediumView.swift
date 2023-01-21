@@ -67,8 +67,7 @@ struct ActivityWidgetMediumView: View {
                                         .foregroundColor(.white)
                                         .multilineTextAlignment(.leading)
                                 } else {
-                                    Text("You've reached your daily goal!\nGood job!")
-                                        .frame(height: 26, alignment: .top)
+                                    Text("You've reached your daily goal!")
                                         .font(.system(size: 10, weight: .medium))
                                         .foregroundColor(.white)
                                         .multilineTextAlignment(.leading)
@@ -123,6 +122,15 @@ struct ActivityWidgetMediumView_Previews: PreviewProvider {
 struct Score: View {
     let score: Int
     var isCrown: Bool { score >= 85 }
+    var scoreLabel: String {
+        if score >= 85 {
+            return "Optimal"
+        } else if score >= 70 {
+            return "Good"
+        } else {
+            return "Pay attention"
+        }
+    }
     
     var body: some View {
         HStack (alignment: .firstTextBaseline, spacing: 4) {
@@ -137,7 +145,7 @@ struct Score: View {
                         .frame(height: 8)
                 }
                     
-                Text("Optimal")
+                Text(scoreLabel)
                     .font(.system(size: 12, weight: .semibold))
                     .foregroundColor(.white)
             }
