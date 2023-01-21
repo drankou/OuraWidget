@@ -29,7 +29,7 @@ struct BedtimeWidgetProvider: IntentTimelineProvider {
             }
             
             let entry = BedtimeEntry(date: .now, configuration: configuration, bedtimeWindow: bedtimeWindow)
-            let timeline = Timeline(entries: [entry], policy: .after(.now.advanced(by: 60*60)))
+            let timeline = Timeline(entries: [entry], policy: .after(.now.advanced(by: 30*60)))
             completion(timeline)
         }
     }

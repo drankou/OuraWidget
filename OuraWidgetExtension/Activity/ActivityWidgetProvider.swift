@@ -33,7 +33,7 @@ struct ActivityWidgetProvider: IntentTimelineProvider {
                 entry = ActivityEntry(date: .now, configuration: configuration, activity: nil, errorMessage: "Missing API key.\nTap to configure")
             }
 
-            let timeline = Timeline(entries: [entry!], policy: .after(.now.advanced(by: 10*60)))
+            let timeline = Timeline(entries: [entry!], policy: .after(.now.advanced(by: 15*60)))
             completion(timeline)
         }
     }
