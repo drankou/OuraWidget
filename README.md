@@ -2,6 +2,8 @@
 
 OuraWidget is an iOS app that allows users to view data from the Oura app in the form of widgets on their iOS device.
 
+Join TestFlight: https://testflight.apple.com/join/ZkxJiTh9
+
 ## Bedtime
 <img width="329" alt="Oura Widget_ Evening" src="https://github.com/drankou/OuraWidget/assets/25752851/78f12dc7-9529-49d3-b0fd-505ee659887f">
 
