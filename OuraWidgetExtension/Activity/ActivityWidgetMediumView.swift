@@ -15,7 +15,6 @@ struct ActivityWidgetMediumView: View {
     
     var body: some View {
         ZStack {
-            ActivityBackgroundView()
             VStack(alignment: .leading) {
                 HStack(alignment: .center, spacing: 4) {
                     Image(systemName: "bolt")
@@ -92,7 +91,8 @@ struct ActivityWidgetMediumView: View {
                 }
                 Spacer()
             }.padding()
-        }.widgetURL(URL(string: Constants.DEEP_LINK + (isError ? "api_key" : "v1/route/activity")))
+        }.widgetBackground(backgroundView: ActivityBackgroundView())
+        .widgetURL(URL(string: Constants.DEEP_LINK + (isError ? "api_key" : "v1/route/activity")))
     }
 }
 

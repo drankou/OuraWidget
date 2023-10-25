@@ -42,6 +42,7 @@ struct BedtimeWidget: Widget {
         .configurationDisplayName("Bedtime")
         .description("Get quick insight about your ideal bedtime.")
         .supportedFamilies(supportedFamilies)
+        .contentMarginsDisabled()
     }
 }
 
@@ -55,5 +56,6 @@ struct ActivityWidget: Widget {
         .configurationDisplayName("Activity")
         .description("Get quick insights about your Activity score.")
         .supportedFamilies([.systemMedium])
+        .contentMarginsDisabled()
     }
 }

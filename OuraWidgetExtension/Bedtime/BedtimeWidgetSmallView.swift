@@ -13,7 +13,6 @@ struct BedtimeWidgetSmallView: View {
     
     var body: some View {
         ZStack {
-            BedtimeWidgetBackgroundView()
             VStack(alignment: .center) {
                 HStack(alignment: .center) {
                     Image(systemName: "moon")
@@ -39,7 +38,8 @@ struct BedtimeWidgetSmallView: View {
                 }
                 Spacer()
             }.padding()
-        }.widgetURL(URL(string: Constants.DEEP_LINK + (bedtimeWindow.status == .MISSING_API_KEY ? "api_key" : "v1/route/home"))!)
+        }.widgetBackground(backgroundView: BedtimeWidgetBackgroundView())
+        .widgetURL(URL(string: Constants.DEEP_LINK + (bedtimeWindow.status == .MISSING_API_KEY ? "api_key" : "v1/route/home"))!)
     }
 }
 

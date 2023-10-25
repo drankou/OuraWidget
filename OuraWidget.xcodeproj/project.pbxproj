@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF0DAC902AE99D16009A655F /* View+widgetBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0DAC8F2AE99D16009A655F /* View+widgetBackground.swift */; };
+		FF0DAC912AE99F3C009A655F /* View+widgetBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0DAC8F2AE99D16009A655F /* View+widgetBackground.swift */; };
 		FF2BEAFA29688FB500D7A355 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BEAF929688FB500D7A355 /* Constants.swift */; };
 		FF2BEAFB29688FB500D7A355 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BEAF929688FB500D7A355 /* Constants.swift */; };
 		FF2BEAFD2968A16700D7A355 /* Int+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BEAFC2968A16700D7A355 /* Int+Double.swift */; };
@@ -76,6 +78,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FF0DAC8F2AE99D16009A655F /* View+widgetBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+widgetBackground.swift"; sourceTree = "<group>"; };
 		FF2BEAF82968857200D7A355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FF2BEAF929688FB500D7A355 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FF2BEAFC2968A16700D7A355 /* Int+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Double.swift"; sourceTree = "<group>"; };
@@ -144,6 +147,7 @@
 			children = (
 				FF2BEAFC2968A16700D7A355 /* Int+Double.swift */,
 				FF68B1432966C8D800F9FDA9 /* Color+hex.swift */,
+				FF0DAC8F2AE99D16009A655F /* View+widgetBackground.swift */,
 			);
 			path = Extenstions;
 			sourceTree = "<group>";
@@ -373,6 +377,7 @@
 				FFACA1A1296365150022DC18 /* ContentView.swift in Sources */,
 				FF2BEAFD2968A16700D7A355 /* Int+Double.swift in Sources */,
 				FF2BEAFA29688FB500D7A355 /* Constants.swift in Sources */,
+				FF0DAC902AE99D16009A655F /* View+widgetBackground.swift in Sources */,
 				FFACA19F296365150022DC18 /* OuraWidgetApp.swift in Sources */,
 				FFACA1C2296365400022DC18 /* OuraWidgetExtension.intentdefinition in Sources */,
 			);
@@ -382,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF0DAC912AE99F3C009A655F /* View+widgetBackground.swift in Sources */,
 				FFEFD452296AB56B003B304E /* ActivityWidgetView.swift in Sources */,
 				FF2BEAFB29688FB500D7A355 /* Constants.swift in Sources */,
 				FF68B1452966C8DD00F9FDA9 /* Color+hex.swift in Sources */,
@@ -543,7 +549,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = OuraWidget/OuraWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"OuraWidget/Preview Content\"";
 				DEVELOPMENT_TEAM = 7R6HKL95CT;
 				ENABLE_PREVIEWS = YES;
@@ -582,7 +588,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = OuraWidget/OuraWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"OuraWidget/Preview Content\"";
 				DEVELOPMENT_TEAM = 7R6HKL95CT;
 				ENABLE_PREVIEWS = YES;
