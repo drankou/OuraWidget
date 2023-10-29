@@ -13,6 +13,7 @@ struct OuraWidgetBundle: WidgetBundle {
     var body: some Widget {
         BedtimeWidget()
         ActivityWidget()
+        ReadinessWidget()
     }
 }
 
@@ -55,6 +56,20 @@ struct ActivityWidget: Widget {
         }
         .configurationDisplayName("Activity")
         .description("Get quick insights about your Activity score.")
+        .supportedFamilies([.systemMedium])
+        .contentMarginsDisabled()
+    }
+}
+
+struct ReadinessWidget: Widget {
+    let kind: String = "ReadinessWidget"
+    
+    var body: some WidgetConfiguration {
+        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: ReadinessWidgetProvider()) { entry in
+            ReadinessWidgetView(entry: entry)
+        }
+        .configurationDisplayName("Readiness")
+        .description("Get your daily readiness and sleep information at a glance.")
         .supportedFamilies([.systemMedium])
         .contentMarginsDisabled()
     }

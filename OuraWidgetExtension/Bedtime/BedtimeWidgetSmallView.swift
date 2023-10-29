@@ -15,12 +15,7 @@ struct BedtimeWidgetSmallView: View {
         ZStack {
             VStack(alignment: .center) {
                 HStack(alignment: .center) {
-                    Image(systemName: "moon")
-                        .font(.system(size: 10))
-                        .foregroundColor(.white)
-                    Text("Ideal Bedtime")
-                        .font(.system(size: 12, weight: .semibold))
-                        .foregroundColor(.white) .textCase(.uppercase)
+                    Title(icon: "moon", title: "Ideal Bedtime")
                 }
                 VStack {
                     if bedtimeWindow.isAvailable {

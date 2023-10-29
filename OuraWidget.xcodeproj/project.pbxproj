@@ -15,6 +15,18 @@
 		FF2BEAFE2968A16700D7A355 /* Int+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BEAFC2968A16700D7A355 /* Int+Double.swift */; };
 		FF3965B9296379CE006A6D10 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = FF3965B8296379CE006A6D10 /* KeychainAccess */; };
 		FF3965BD29637A02006A6D10 /* KeychainStorageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3965BC296379E2006A6D10 /* KeychainStorageWrapper.swift */; };
+		FF4750A22AED816700916B08 /* ReadinessEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4750A12AED816700916B08 /* ReadinessEntry.swift */; };
+		FF4750A32AED816700916B08 /* ReadinessEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4750A12AED816700916B08 /* ReadinessEntry.swift */; };
+		FF4750A52AED81AD00916B08 /* DailyReadiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4750A42AED81AD00916B08 /* DailyReadiness.swift */; };
+		FF4750A62AED81AD00916B08 /* DailyReadiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4750A42AED81AD00916B08 /* DailyReadiness.swift */; };
+		FF4750A82AED937400916B08 /* Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4750A72AED937400916B08 /* Sleep.swift */; };
+		FF4750A92AED937400916B08 /* Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4750A72AED937400916B08 /* Sleep.swift */; };
+		FF4750AC2AED968000916B08 /* ReadinessWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4750AA2AED968000916B08 /* ReadinessWidgetProvider.swift */; };
+		FF4750AE2AED97E900916B08 /* Readiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4750AD2AED97E900916B08 /* Readiness.swift */; };
+		FF4750AF2AED97E900916B08 /* Readiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4750AD2AED97E900916B08 /* Readiness.swift */; };
+		FF4750B22AED98C200916B08 /* ReadinessWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4750B02AED98C200916B08 /* ReadinessWidgetView.swift */; };
+		FF4750B52AED991600916B08 /* ReadinessWidgetMediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4750B32AED991600916B08 /* ReadinessWidgetMediumView.swift */; };
+		FF4750B82AED9B1100916B08 /* ReadinessBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4750B62AED9B1100916B08 /* ReadinessBackgroundView.swift */; };
 		FF56EC5829673E8200E5921E /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56EC5729673E8200E5921E /* KeychainHelper.swift */; };
 		FF56EC5929673F6D00E5921E /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56EC5729673E8200E5921E /* KeychainHelper.swift */; };
 		FF56EC5C2967653100E5921E /* KeyboardObserving in Frameworks */ = {isa = PBXBuildFile; productRef = FF56EC5B2967653100E5921E /* KeyboardObserving */; };
@@ -43,6 +55,18 @@
 		FFACA1E229636C750022DC18 /* BedtimeWidgetSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACA1E129636C750022DC18 /* BedtimeWidgetSmallView.swift */; };
 		FFC89E482963725300572DEF /* OuraWidgetExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FFACA1B02963653F0022DC18 /* OuraWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FFC89E4D296378FD00572DEF /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = FFC89E4C296378FD00572DEF /* KeychainAccess */; };
+		FFCF14202AEE5F82004DA9F9 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCF141F2AEE5F82004DA9F9 /* Title.swift */; };
+		FFCF14212AEE5F82004DA9F9 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCF141F2AEE5F82004DA9F9 /* Title.swift */; };
+		FFCF14232AEE65E5004DA9F9 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCF14222AEE65E5004DA9F9 /* Score.swift */; };
+		FFCF14242AEE65E5004DA9F9 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCF14222AEE65E5004DA9F9 /* Score.swift */; };
+		FFCF14262AEE6607004DA9F9 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCF14252AEE6607004DA9F9 /* Field.swift */; };
+		FFCF14272AEE6607004DA9F9 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCF14252AEE6607004DA9F9 /* Field.swift */; };
+		FFCF142C2AEEA041004DA9F9 /* SleepField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCF142B2AEEA041004DA9F9 /* SleepField.swift */; };
+		FFCF142D2AEEA041004DA9F9 /* SleepField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCF142B2AEEA041004DA9F9 /* SleepField.swift */; };
+		FFCF142F2AEEA097004DA9F9 /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCF142E2AEEA097004DA9F9 /* AlertMessage.swift */; };
+		FFCF14302AEEA097004DA9F9 /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCF142E2AEEA097004DA9F9 /* AlertMessage.swift */; };
+		FFCF14322AEEA57D004DA9F9 /* DailySleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCF14312AEEA57D004DA9F9 /* DailySleep.swift */; };
+		FFCF14332AEEA57D004DA9F9 /* DailySleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCF14312AEEA57D004DA9F9 /* DailySleep.swift */; };
 		FFEFD451296AB567003B304E /* ActivityWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEFD44A296AB545003B304E /* ActivityWidgetProvider.swift */; };
 		FFEFD452296AB56B003B304E /* ActivityWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEFD44B296AB545003B304E /* ActivityWidgetView.swift */; };
 		FFEFD453296AB56E003B304E /* ActivityWidgetMediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEFD448296AB545003B304E /* ActivityWidgetMediumView.swift */; };
@@ -83,6 +107,14 @@
 		FF2BEAF929688FB500D7A355 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FF2BEAFC2968A16700D7A355 /* Int+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Double.swift"; sourceTree = "<group>"; };
 		FF3965BC296379E2006A6D10 /* KeychainStorageWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorageWrapper.swift; sourceTree = "<group>"; };
+		FF4750A12AED816700916B08 /* ReadinessEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadinessEntry.swift; sourceTree = "<group>"; };
+		FF4750A42AED81AD00916B08 /* DailyReadiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReadiness.swift; sourceTree = "<group>"; };
+		FF4750A72AED937400916B08 /* Sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep.swift; sourceTree = "<group>"; };
+		FF4750AA2AED968000916B08 /* ReadinessWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadinessWidgetProvider.swift; sourceTree = "<group>"; };
+		FF4750AD2AED97E900916B08 /* Readiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Readiness.swift; sourceTree = "<group>"; };
+		FF4750B02AED98C200916B08 /* ReadinessWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadinessWidgetView.swift; sourceTree = "<group>"; };
+		FF4750B32AED991600916B08 /* ReadinessWidgetMediumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadinessWidgetMediumView.swift; sourceTree = "<group>"; };
+		FF4750B62AED9B1100916B08 /* ReadinessBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadinessBackgroundView.swift; sourceTree = "<group>"; };
 		FF56EC5529673CAC00E5921E /* OuraWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OuraWidget.entitlements; sourceTree = "<group>"; };
 		FF56EC5629673CB500E5921E /* OuraWidgetExtensionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OuraWidgetExtensionExtension.entitlements; sourceTree = "<group>"; };
 		FF56EC5729673E8200E5921E /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
@@ -109,6 +141,12 @@
 		FFACA1DD2963698D0022DC18 /* BedtimeWidgetRectangularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeWidgetRectangularView.swift; sourceTree = "<group>"; };
 		FFACA1DF29636B180022DC18 /* BedtimeWidgetAccessoryInlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeWidgetAccessoryInlineView.swift; sourceTree = "<group>"; };
 		FFACA1E129636C750022DC18 /* BedtimeWidgetSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeWidgetSmallView.swift; sourceTree = "<group>"; };
+		FFCF141F2AEE5F82004DA9F9 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		FFCF14222AEE65E5004DA9F9 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		FFCF14252AEE6607004DA9F9 /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		FFCF142B2AEEA041004DA9F9 /* SleepField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepField.swift; sourceTree = "<group>"; };
+		FFCF142E2AEEA097004DA9F9 /* AlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
+		FFCF14312AEEA57D004DA9F9 /* DailySleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySleep.swift; sourceTree = "<group>"; };
 		FFEFD447296AB545003B304E /* ActivityBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityBackgroundView.swift; sourceTree = "<group>"; };
 		FFEFD448296AB545003B304E /* ActivityWidgetMediumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityWidgetMediumView.swift; sourceTree = "<group>"; };
 		FFEFD449296AB545003B304E /* ActivityEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityEntry.swift; sourceTree = "<group>"; };
@@ -150,6 +188,19 @@
 				FF0DAC8F2AE99D16009A655F /* View+widgetBackground.swift */,
 			);
 			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		FF4750A02AED814A00916B08 /* Readiness */ = {
+			isa = PBXGroup;
+			children = (
+				FF4750A12AED816700916B08 /* ReadinessEntry.swift */,
+				FF4750AA2AED968000916B08 /* ReadinessWidgetProvider.swift */,
+				FF4750B02AED98C200916B08 /* ReadinessWidgetView.swift */,
+				FF4750B32AED991600916B08 /* ReadinessWidgetMediumView.swift */,
+				FF4750B62AED9B1100916B08 /* ReadinessBackgroundView.swift */,
+				FFCF142B2AEEA041004DA9F9 /* SleepField.swift */,
+			);
+			path = Readiness;
 			sourceTree = "<group>";
 		};
 		FF68B12D2966159C00F9FDA9 /* Activity */ = {
@@ -221,6 +272,8 @@
 		FFACA1B62963653F0022DC18 /* OuraWidgetExtension */ = {
 			isa = PBXGroup;
 			children = (
+				FFCF141C2AEE5E9E004DA9F9 /* Shared */,
+				FF4750A02AED814A00916B08 /* Readiness */,
 				FFEFD456296ADEB5003B304E /* OuraService */,
 				FF68B12D2966159C00F9FDA9 /* Activity */,
 				FFACA1CA2963665B0022DC18 /* Bedtime */,
@@ -249,12 +302,27 @@
 			path = Bedtime;
 			sourceTree = "<group>";
 		};
+		FFCF141C2AEE5E9E004DA9F9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FFCF141F2AEE5F82004DA9F9 /* Title.swift */,
+				FFCF14222AEE65E5004DA9F9 /* Score.swift */,
+				FFCF14252AEE6607004DA9F9 /* Field.swift */,
+				FFCF142E2AEEA097004DA9F9 /* AlertMessage.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		FFEFD456296ADEB5003B304E /* OuraService */ = {
 			isa = PBXGroup;
 			children = (
 				FFEFD457296ADEC3003B304E /* OuraService.swift */,
 				FFEFD45A296AE46F003B304E /* DailyActivity.swift */,
 				FFEFD45D296AEA51003B304E /* Utils.swift */,
+				FF4750A42AED81AD00916B08 /* DailyReadiness.swift */,
+				FF4750A72AED937400916B08 /* Sleep.swift */,
+				FF4750AD2AED97E900916B08 /* Readiness.swift */,
+				FFCF14312AEEA57D004DA9F9 /* DailySleep.swift */,
 			);
 			path = OuraService;
 			sourceTree = "<group>";
@@ -373,13 +441,23 @@
 			files = (
 				FF3965BD29637A02006A6D10 /* KeychainStorageWrapper.swift in Sources */,
 				FF56EC5829673E8200E5921E /* KeychainHelper.swift in Sources */,
+				FFCF14202AEE5F82004DA9F9 /* Title.swift in Sources */,
 				FF68B1442966C8D800F9FDA9 /* Color+hex.swift in Sources */,
+				FFCF14232AEE65E5004DA9F9 /* Score.swift in Sources */,
+				FF4750AE2AED97E900916B08 /* Readiness.swift in Sources */,
 				FFACA1A1296365150022DC18 /* ContentView.swift in Sources */,
+				FFCF142C2AEEA041004DA9F9 /* SleepField.swift in Sources */,
+				FFCF14322AEEA57D004DA9F9 /* DailySleep.swift in Sources */,
 				FF2BEAFD2968A16700D7A355 /* Int+Double.swift in Sources */,
 				FF2BEAFA29688FB500D7A355 /* Constants.swift in Sources */,
+				FFCF142F2AEEA097004DA9F9 /* AlertMessage.swift in Sources */,
+				FF4750A52AED81AD00916B08 /* DailyReadiness.swift in Sources */,
 				FF0DAC902AE99D16009A655F /* View+widgetBackground.swift in Sources */,
+				FF4750A22AED816700916B08 /* ReadinessEntry.swift in Sources */,
+				FFCF14262AEE6607004DA9F9 /* Field.swift in Sources */,
 				FFACA19F296365150022DC18 /* OuraWidgetApp.swift in Sources */,
 				FFACA1C2296365400022DC18 /* OuraWidgetExtension.intentdefinition in Sources */,
+				FF4750A82AED937400916B08 /* Sleep.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,10 +465,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4750AF2AED97E900916B08 /* Readiness.swift in Sources */,
+				FF4750A62AED81AD00916B08 /* DailyReadiness.swift in Sources */,
 				FF0DAC912AE99F3C009A655F /* View+widgetBackground.swift in Sources */,
+				FF4750B82AED9B1100916B08 /* ReadinessBackgroundView.swift in Sources */,
+				FF4750A32AED816700916B08 /* ReadinessEntry.swift in Sources */,
 				FFEFD452296AB56B003B304E /* ActivityWidgetView.swift in Sources */,
+				FFCF142D2AEEA041004DA9F9 /* SleepField.swift in Sources */,
 				FF2BEAFB29688FB500D7A355 /* Constants.swift in Sources */,
 				FF68B1452966C8DD00F9FDA9 /* Color+hex.swift in Sources */,
+				FFCF14272AEE6607004DA9F9 /* Field.swift in Sources */,
 				FFEFD459296ADEE5003B304E /* OuraService.swift in Sources */,
 				FFACA1D22963665B0022DC18 /* BedtimeWidgetBackgroundView.swift in Sources */,
 				FFEFD45F296AEA5B003B304E /* Utils.swift in Sources */,
@@ -399,19 +483,27 @@
 				FFACA1B82963653F0022DC18 /* OuraWidgetBundle.swift in Sources */,
 				FF68B1422966C5CE00F9FDA9 /* BedtimeWidgetView.swift in Sources */,
 				FFACA1DB296368800022DC18 /* BedtimeWidgetMediumView.swift in Sources */,
+				FF4750B52AED991600916B08 /* ReadinessWidgetMediumView.swift in Sources */,
 				FFEFD454296AB570003B304E /* ActivityEntry.swift in Sources */,
 				FFACA1E029636B180022DC18 /* BedtimeWidgetAccessoryInlineView.swift in Sources */,
+				FF4750B22AED98C200916B08 /* ReadinessWidgetView.swift in Sources */,
 				FFEFD453296AB56E003B304E /* ActivityWidgetMediumView.swift in Sources */,
 				FFACA1DC296368850022DC18 /* BedtimeWindow.swift in Sources */,
 				FFEFD45C296AE537003B304E /* DailyActivity.swift in Sources */,
+				FFCF14302AEEA097004DA9F9 /* AlertMessage.swift in Sources */,
 				FFACA1D02963665B0022DC18 /* ClockView.swift in Sources */,
 				FFACA1E229636C750022DC18 /* BedtimeWidgetSmallView.swift in Sources */,
+				FF4750AC2AED968000916B08 /* ReadinessWidgetProvider.swift in Sources */,
 				FFACA1DE2963698D0022DC18 /* BedtimeWidgetRectangularView.swift in Sources */,
 				FFEFD451296AB567003B304E /* ActivityWidgetProvider.swift in Sources */,
+				FFCF14332AEEA57D004DA9F9 /* DailySleep.swift in Sources */,
 				FFEFD455296AB573003B304E /* ActivityBackgroundView.swift in Sources */,
 				FF68B1402966C13000F9FDA9 /* KeychainStorageWrapper.swift in Sources */,
+				FFCF14212AEE5F82004DA9F9 /* Title.swift in Sources */,
 				FFACA1C1296365400022DC18 /* OuraWidgetExtension.intentdefinition in Sources */,
 				FF68B13A2966BCF100F9FDA9 /* BedtimeEntry.swift in Sources */,
+				FF4750A92AED937400916B08 /* Sleep.swift in Sources */,
+				FFCF14242AEE65E5004DA9F9 /* Score.swift in Sources */,
 				FF68B1382966BCC800F9FDA9 /* BedtimeWidgetProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,7 +641,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = OuraWidget/OuraWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"OuraWidget/Preview Content\"";
 				DEVELOPMENT_TEAM = 7R6HKL95CT;
 				ENABLE_PREVIEWS = YES;
@@ -588,7 +680,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = OuraWidget/OuraWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"OuraWidget/Preview Content\"";
 				DEVELOPMENT_TEAM = 7R6HKL95CT;
 				ENABLE_PREVIEWS = YES;

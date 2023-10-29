@@ -21,18 +21,23 @@ class SnakeCaseJSONDecoder: JSONDecoder {
     }
 }
 
-func formatMeters(_ meters: Int) -> String {
-    let kilometers = Double(meters) / 1000.0
+func formatMeters(_ meters: Int, isMetric: Bool = Locale.current.usesMetricSystem) -> String {
+    let distance = isMetric ? Double(meters) / 1000.0 : Double(meters) * 0.000621371
+    
     let formatter = NumberFormatter()
     formatter.decimalSeparator = ","
-    formatter.maximumFractionDigits = 1
+    formatter.maximumFractionDigits = isMetric ? 1 : 2
     
-    return formatter.string(for: kilometers)! + " km"
+    if isMetric {
+        return formatter.string(for: distance)! + " km"
+    } else {
+        return formatter.string(for: distance)! + " mi"
+    }
 }
 
 func formatSeconds(_ seconds: Int) -> String {
-  let hours = seconds / 3600
-  let minutes = (seconds % 3600) / 60
+    let hours = seconds / 3600
+    let minutes = (seconds % 3600) / 60
     
-  return "\(hours)h \(minutes)m"
+    return "\(hours)h \(minutes)m"
 }

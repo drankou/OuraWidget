@@ -15,12 +15,7 @@ struct BedtimeWidgetMediumView: View {
         ZStack {
             VStack(alignment: .leading) {
                 HStack {
-                    Image(systemName: "moon")
-                        .font(.system(size: 12))
-                        .foregroundColor(.white)
-                    Text("Bedtime’s Approaching")
-                        .font(.system(size: 12, weight: .semibold))
-                        .foregroundColor(.white) .textCase(.uppercase)
+                    Title(icon: "moon", title: "Bedtime's Approaching")
                     Spacer()
                 }
                 HStack(alignment: .center){
